@@ -1,0 +1,2 @@
+networksetup -listallhardwareports | grep -A1 'Ethernet$'
+ifconfig en0
