@@ -1,0 +1,4 @@
+You've to modify the file /etc/hostname which is read at boot time to set the system name.
+Afther that, you have restart the script /etc/init.d/hostname (or /etc/init.d/hostname.sh) as follows: /etc/init.d/hostname start
+The next step is to make sure that the file /etc/hosts contains your new system name, if that is not the case you can fix it replacing your old system name with the new one: sudo sed -i 's/oldsysname/new-sysname/g' /etc/hosts
+Finally, restart the network service: /etc/init.d/networking restart

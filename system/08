@@ -1,0 +1,2 @@
+The default path to store the authorized RSA keys is ~/.ssh/authorized_keys.
+That file contains all the public keys that will match with the corresponding private key when the client is logging to the server.

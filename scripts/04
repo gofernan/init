@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ -e $HOME/filehash.md5 ]; then
+	if ! md5sum -c $HOME/filehash.md5 > /dev/null 2>&1 ; then
+		echo "The file was modified" | mail -s "Attention!" root
+	fi
+else
+	md5sum /etc/crontab > $HOME/filehash.md5
+fi
+# (crontab -l; echo "@midnight $HOME/filehash.md5") | crontab -

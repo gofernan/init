@@ -1,0 +1,1 @@
+uptime -s | awk '{print $2}'
