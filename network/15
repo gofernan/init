@@ -1,7 +1,6 @@
-You've to edit the /etc/hosts (or /private/etc/hosts) the next way:
+You've to add a new line in /etc/hosts file with these fields:
 1st field: ip address where you want to be redirected
 2nd field: domain name where you want to redirect from
 
 In this case:
-
 46.19.122.85 intra.42.fr
