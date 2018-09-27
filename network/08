@@ -1,2 +1,3 @@
 The provider is: Online SAS
 The way to get the provider is using the utility 'whois' that allows you to query the IANA database in order to get all the public information refered with that domain name.
+whois slash16.org

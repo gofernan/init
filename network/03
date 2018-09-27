@@ -1,1 +1,1 @@
-networksetup -listallhardwareports | grep -A2 'Wi-Fi$' | grep 'Ethernet Address:'
+networksetup -listallhardwareports | grep -A2 'Wi-Fi$' | grep 'Ethernet Address:' | awk '{print $3}'
