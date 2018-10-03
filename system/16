@@ -1,1 +1,13 @@
-cron
+Cron is a software that allows you to schedule a time-based job in Unix-like computer operating systems.
+It typically automates system maintenance or administration.
+Each line of a crontab file represents a job and looks like:
+
+* * * * * command to execute
+
+1st * -> minute (0 - 59)
+2nd * -> hour (0 - 23)
+3rd * -> day of the month (1 - 31)
+4nd * -> month (1 - 12)
+5nd * -> day of the week (0 - 6)
+
+Most used command to edit this file 'crontab -e' and for list the content 'crontab -l'

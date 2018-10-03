@@ -1,6 +1,6 @@
-#!/bin/bash
-LINE="0 4 * * 1 $HOME/script.sh"
+#!/bin/sh
 LOG_FILE="/var/log/update_script.log"
 echo "apt-get update >> $LOG_FILE 2>&1 && apt-get upgrade >> $LOG_FILE 2>&1" > $HOME/script.sh
 chmod 755 $HOME/script.sh
-(crontab -l ; echo "$LINE") | crontab -
+# In order to run this script once per week (for example, the mondays):
+# (crontab -l > /dev/null 2>&1; echo "0 4 * * 1 $HOME/script.sh") | crontab -
